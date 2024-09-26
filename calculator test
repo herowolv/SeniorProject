@@ -35,5 +35,7 @@ elif choice == '3':
     print(f"The result is: {multiply(num1, num2)}")
 elif choice == '4':
     print(f"The result is: {divide(num1, num2)}")
-else:
+notelse:
     print("Invalid input!")
+
+BOOM
