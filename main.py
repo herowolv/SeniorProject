@@ -14,5 +14,18 @@ if __name__ == "__main__":
     main()
 
 # search features
-# database
+# view devices in UI
+ 
+# database number reset
 #
+# database for admin and device
+ 
+# notification to admin
+# authentication for admin
+#
+# admin credintials
+# Steps:
+# creating all the features, Create database for admin, whitelist devices and activity log, Create script to detect USB device and compare it to whitelist database.
+# create authentication protocol and notification
+# create GUI
+ 
