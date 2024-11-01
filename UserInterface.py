@@ -54,3 +54,19 @@ class UserInterface(QMainWindow):
         else:
             QMessageBox.warning(self, "Input Error", "Please enter both name and device ID.")
 
+    def remove_device(self):
+        device_id = self.device_id_input.text()
+        if device_id:
+            self.db_manager.remove_device(device_id)
+            QMessageBox.information(self, "Success", f"Device with ID '{device_id}' removed.")
+        else:
+            QMessageBox.warning(self, "Input Error", "Please enter a device ID.")
+
+    def update_device(self):
+        device_id = self.device_id_input.text()
+        new_name = self.device_name_input.text()
+        if device_id and new_name:
+            self.db_manager.update_device(device_id, new_name)
+            QMessageBox.information(self, "Success", f"Device with ID '{device_id}' updated to '{new_name}'.")
+        else:
+            QMessageBox.warning(self, "Input Error", "Please enter both the device ID and new name.")
