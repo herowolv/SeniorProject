@@ -1,17 +1,17 @@
-import sys
-from PyQt5.QtWidgets import QApplication
-from Database import DatabaseManager
-from UserInterface import UserInterface
+from Database import DatabaseManager  # Import the database logic
+from UserInterface import Application       # Import the UI logic
 
 def main():
-    db_manager = DatabaseManager()  # Initialize database
-    app = QApplication(sys.argv)  # Initialize PyQt5 application
-    ui = UserInterface(db_manager)  # Create the main UI
-    ui.show()  # Show the UI window
-    sys.exit(app.exec_())  # Start the event loop
+    # Initialize the database
+    db = DatabaseManager('whitelist.db')  # Name of your database file
+
+    # Launch the UI
+    app = Application(db)
+    app.run()
 
 if __name__ == "__main__":
     main()
+
 
 # search features
 # view devices in UI
