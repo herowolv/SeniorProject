@@ -1,0 +1,85 @@
+/* Main Window */
+QMainWindow {
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: 1px solid #444444;
+    background: #1E1E1E;
+    border-radius: 5px;
+}
+QTabBar::tab {
+    background: #3E3E3E;
+    color: #DDDDDD;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 2px;
+}
+QTabBar::tab:selected {
+    background: #4E2A84;
+    color: white;
+    font-weight: bold;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #4E2A84;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: #673AB7;
+}
+QPushButton:pressed {
+    background-color: #311B92;
+}
+
+/* LineEdits */
+QLineEdit {
+    background-color: #3E3E3E;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 14px;
+    color: #DDDDDD;
+}
+QLineEdit:focus { 
+    border-color: #4E2A84;
+}
+
+/* Tables */
+QTableWidget {
+    background: #3E3E3E;
+    color: #DDDDDD;
+    border: 1px solid #555555;
+    /*gridline-color: #444444;*/
+    font-size: 13px;
+}
+QTableWidget::item {
+    padding: 4px;
+}
+QHeaderView::section {
+    background: #444444;
+    color: #DDDDDD;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #555555;
+}
+
+/* Scrollbars */
+QScrollBar:horizontal, QScrollBar:vertical {
+    background: #2E2E2E;
+    border: 1px solid #555555;
+    border-radius: 5px;
+}
+QScrollBar::handle {
+    background: #4E2A84;
+    border-radius: 5px;
+}
+QScrollBar::handle:hover {
+    background: #673AB7;
+}
